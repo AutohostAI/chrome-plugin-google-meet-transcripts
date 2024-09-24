@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Meeting Transcript Reminder",
-  "version": "1.2",
+  "name": "Meeting Transcripts",
+  "version": "1.2.1",
   "description": "Automatically enable meeting transcripts on meet.google.com",
   "permissions": [],
   "background": {

@@ -1,12 +1,16 @@
 {
   "name": "meet-chrome-plugin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automatically enable meeting transcripts on meet.google.com",
   "main": "background.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "chrome",
+    "extension",
+    "google-meet"
+  ],
+  "author": "Roy Firestein <opensource@autohost.ai>",
+  "license": "MIT"
 }
