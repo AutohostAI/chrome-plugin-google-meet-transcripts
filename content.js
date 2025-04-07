@@ -86,7 +86,7 @@
   async function automaticallyEnable() {
     try {
       // Wait for the "Transcripts" button to become visible and click it
-      await waitForElement("//button[contains(@aria-label, 'Activities')]");
+      await waitForElement("//button[contains(@aria-label, 'Meeting tools')]");
       await waitForElement("//span[text()='Transcripts']");
       await waitForElement("//span[text()='Start transcription']");
       await waitForElement("//span[text()='Start']");
