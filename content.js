@@ -63,11 +63,11 @@
         clearTimeout(timeoutId);
       };
 
-      // Set a timeout to reject the promise after 3 seconds
+      // Set a timeout to reject the promise after 60 seconds
       const timeoutId = setTimeout(() => {
         observer.disconnect(); // Stop observing
-        reject(new Error(`Element not found within 30 seconds: ${xpath}`)); // Reject the promise
-      }, 30000);
+        reject(new Error(`Element not found within 60 seconds: ${xpath}`)); // Reject the promise
+      }, 60000);
       const observer = new MutationObserver(() => {
         if (clickButtonByXPath(xpath)) {
           observer.disconnect(); // Stop observing once the button is clicked
@@ -87,7 +87,7 @@
     try {
       // Wait for the "Transcripts" button to become visible and click it
       await waitForElement("//button[contains(@aria-label, 'Meeting tools')]");
-      await waitForElement("//span[text()='Transcripts']");
+      await waitForElement("//div[text()='Transcribe']");
       await waitForElement("//span[text()='Start transcription']");
       await waitForElement("//span[text()='Start']");
       await waitForElement("//button[contains(@aria-label, 'Close')]");
