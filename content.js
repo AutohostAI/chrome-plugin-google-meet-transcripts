@@ -87,7 +87,7 @@
     try {
       // Wait for the "Transcripts" button to become visible and click it
       await waitForElement("//button[contains(@aria-label, 'Meeting tools')]");
-      await waitForElement("//span[text()='Transcripts']");
+      await waitForElement("//div[text()='Transcribe']");
       await waitForElement("//span[text()='Start transcription']");
       await waitForElement("//span[text()='Start']");
       await waitForElement("//button[contains(@aria-label, 'Close')]");
